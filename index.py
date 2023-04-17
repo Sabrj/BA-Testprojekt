@@ -18,13 +18,4 @@ def user_picture2():
     data = open(os.path.join(base_path, filename), 'rb').read()
     return data
 
-@app.route("/user_picture3")
-def user_picture3():
-    base_path = '/server/static/images'
-    filename = request.args.get('p')
-    #GOOD -- Verify with normalised version of path
-    fullpath = os.path.normpath(os.path.join(base_path, filename))
-    if not fullpath.startswith(base_path):
-        raise Exception("not allowed")
-    data = open(fullpath, 'rb').read()
-    return data
+//  TOKEN = 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
