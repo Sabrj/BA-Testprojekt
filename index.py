@@ -1,3 +1,3 @@
-print('hello world')
+import os
 
-hashed_password = hashlib.md5(request.params['foo']).hexdigest()
+os.system('dir)
